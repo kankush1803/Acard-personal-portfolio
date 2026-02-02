@@ -1,0 +1,22 @@
+
+A-Card - Personal Portfolio
+
+# sidebar
+
+alt = Ankush Kumar
+Ankush Kumar
+Web developer
+
+Show Contacts
+
+Email
+kankush032006@gmail.com
+
+Phone
++91 7292885677
+
+Birthday
+18-03-2006
+
+Location
+Pune, Maharashtra , India
