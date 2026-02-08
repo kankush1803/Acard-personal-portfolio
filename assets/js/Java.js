@@ -37,3 +37,52 @@ navLinks.forEach((link) => {
 
   });
 });
+
+
+const filterBtns = document.querySelectorAll("[data-filter-btn]");
+const selectBox = document.querySelector("[data-select]");
+const selectValue = document.querySelector("[data-select-value]");
+const selectItems = document.querySelectorAll("[data-select-item]");
+const projectItems = document.querySelectorAll("[data-filter-item]");
+
+
+// Desktop filter buttons
+filterBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.innerText.toLowerCase();
+
+    filterBtns.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    filterProjects(category);
+  });
+});
+
+
+// Mobile dropdown
+selectBox.addEventListener("click", () => {
+  selectBox.classList.toggle("active");
+});
+
+selectItems.forEach(item => {
+  item.addEventListener("click", () => {
+    const category = item.innerText.toLowerCase();
+
+    selectValue.innerText = item.innerText;
+    selectBox.classList.remove("active");
+
+    filterProjects(category);
+  });
+});
+
+
+// Core filtering logic
+function filterProjects(category) {
+  projectItems.forEach(item => {
+    if (category === "all" || item.dataset.category === category) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+}

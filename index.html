@@ -401,11 +401,7 @@
 
               <div data-modal-text>
                 <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  
                 </p>
               </div>
 
@@ -468,48 +464,74 @@
 
       </article>
 
+      
+
       <!--
         - #RESUME
       -->
 
-      <section class="timeline">
+      <article class="resume" data-page="resume">
 
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
           </div>
-          <h3 class="h3">Education</h3>
-        </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Bachelor of Technology (B.Tech) – Computer Engineering</h4>
-              <span>2023 — Present</span>
+
+              <h4 class="h4 timeline-item-title">Newton School of Technology </h4>
+
+              <span>2025-Present</span>
+
               <p class="timeline-text">
                 Currently pursuing B.Tech in Computer Engineering with a strong focus on web development, programming, and software design. Actively learning modern technologies and building real-world projects.
+      
               </p>
+
             </li>
 
             <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">Higher Secondary Education (12th Grade)</h4>
-              <span>2021 — 2023</span>
+
+              <span>2022-2023</span>
+
               <p class="timeline-text">
-                Completed higher secondary education with a focus on science and mathematics, building a strong foundation in analytical thinking and problem-solving.
+                Completed my schooling with a focus on science and mathematics, laying a strong foundation for my future studies in engineering.
               </p>
+
             </li>
 
             <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">Secondary Education (10th Grade)</h4>
-              <span>2020 — 2021</span>
+
+              <span>2021 — 2022</span>
+
               <p class="timeline-text">
                 Completed secondary schooling with excellent academic performance and a growing interest in technology and computer science.
               </p>
+
             </li>
 
           </ol>
-      </section>
+
+        </section>
         
+
+        
+
         <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
@@ -545,7 +567,20 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
+                <h5 class="h5">Coding</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5"><p>Problems-solving</p></h5>
                 <data value="90">90%</data>
               </div>
 
@@ -555,22 +590,197 @@
 
             </li>
 
-            <li class="skills-item">
+          </ul>
 
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
+        </section>
+      </article>
+      
+      
+      
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Frontend</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Backend</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Tools</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select skill category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
+            </button>
 
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Frontend</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Backend</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Tools</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- Frontend -->
+            <li class="project-item active" data-filter-item data-category="frontend">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/html5.avif" alt="HTML">
+                </figure>
+                <h3 class="project-title">HTML5</h3>
+                <p class="project-category">Frontend</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="frontend">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/css3.jpg" alt="CSS">
+                </figure>
+                <h3 class="project-title">CSS3</h3>
+                <p class="project-category">Frontend</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="frontend">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/java-script.jpg" alt="JavaScript">
+                </figure>
+                <h3 class="project-title">JavaScript</h3>
+                <p class="project-category">Frontend</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="frontend">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/react.js.png" alt="React">
+                </figure>
+                <h3 class="project-title">React</h3>
+                <p class="project-category">Frontend</p>
+              </a>
+            </li>
+
+            <!-- Backend -->
+
+            <li class="project-item active" data-filter-item data-category="backend">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/python.png" alt="Python">
+                </figure>
+                <h3 class="project-title">Python</h3>
+                <p class="project-category">Backend</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="backend">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/nodejs-frameworks.png" alt="Node.js">
+                </figure>
+                <h3 class="project-title">Node.js</h3>
+                <p class="project-category">Backend</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="backend">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/express-js.png" alt="Express">
+                </figure>
+                <h3 class="project-title">Express.js</h3>
+                <p class="project-category">Backend</p>
+              </a>
+            </li>
+
+            
+            
+
+            <!-- Tools -->
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/git.png" alt="Git">
+                </figure>
+                <h3 class="project-title">Git</h3>
+                <p class="project-category">Tools</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/github.jpg" alt="GitHub">
+                </figure>
+                <h3 class="project-title">GitHub</h3>
+                <p class="project-category">Tools</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="tools">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/vscode.webp" alt="VS Code">
+                </figure>
+                <h3 class="project-title">VS Code</h3>
+                <p class="project-category">Tools</p>
+              </a>
             </li>
 
           </ul>
 
         </section>
+
+
+      </article>
+                
+
+
+
 
 </section>
 
