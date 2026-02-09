@@ -86,3 +86,26 @@ function filterProjects(category) {
     }
   });
 }
+
+
+// ================= PROJECT FILTER =================
+
+const projectBtns = document.querySelectorAll("[data-project-btn]");
+const projectList = document.querySelectorAll("[data-project-item]");
+
+projectBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.innerText.toLowerCase();
+
+    projectBtns.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    projectList.forEach(item => {
+      if (category === "all" || item.dataset.category === category) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  });
+});
